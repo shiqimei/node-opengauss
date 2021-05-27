@@ -15,17 +15,13 @@ Development on MacOS/Linux is preferred :)
 1. Clone the repo `git clone git@github.com:lolimay/node-opengauss.git`
 2. Ensure you have a openGauss instance running, follow this [tutorial](https://www.lolimay.cn/2021/02/19/opengauss/%E4%BD%BF%E7%94%A8docker%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAOpen%20Gauss%E7%8E%AF%E5%A2%83/) (Chinese Only/仅中文) to set up a local instance with docker
 
+### Run the project
+
 Navigate to `examples` and run following to test driver:
 
 ```bash
 cd examples
-node index.mjs
-```
-
-### Run the project
-
-```bash
-node index.mjs
+node index.js
 ```
 
 ### For Debugging
