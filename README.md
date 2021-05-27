@@ -1,4 +1,4 @@
-![](https://socialify.git.ci/lolimay/node-opengauss/image?description=1&descriptionEditable=Non-blocking%20openGauss%20driver%20for%20Node.js&font=KoHo&language=1&owner=1&pattern=Circuit%20Board&theme=Light)
+# node-opengauss
 
 A simple [openGauss](https://opengauss.org) client for Node.js based on [node-postgres](https://github.com/brianc/node-postgres).
 
