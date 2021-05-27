@@ -8,6 +8,27 @@ A simple [openGauss](https://opengauss.org) client for Node.js based on [node-po
 npm install node-opengauss --save
 ```
 
+## Usage
+
+```javascript
+import OpenGauss from 'node-opengauss'
+
+const client = new OpenGauss()
+const config = {
+  host: 'localhost',
+  port: 5432,
+  username: 'lolimay',
+  database: 'postgres',
+  password: 'Enmo@123'
+}
+
+client.connect(config)
+client.query('select current_date', result => {
+    console.log(result) // { rows: [ { date: 2021-05-26T16:00:00.000Z } ], affectedRows: 1 }
+    return client.disconnect()
+})
+```
+
 ## Development
 
 Development on MacOS/Linux is preferred :)

@@ -291,7 +291,6 @@ export class Parser {
   }
 
   public parseAuthenticationResponse(offset: number, length: number, bytes: Buffer) {
-    console.log({ offset, length, bytes }) 
     this.reader.setBuffer(offset, bytes)
     const code = this.reader.int32()
     // TODO(bmc): maybe better types here
