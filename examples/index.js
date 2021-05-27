@@ -1,4 +1,4 @@
-import OpenGauss from '../lib' // node-opengauss
+const OpenGauss = require('../lib/index') // node-opengauss
 
 const client = new OpenGauss() // 实例化 OpenGauss 客户端
 
