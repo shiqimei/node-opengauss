@@ -2,19 +2,24 @@
 
 A simple [openGauss](https://opengauss.org) client for Node.js based on [node-postgres](https://github.com/brianc/node-postgres).
 
-### Setting up for local development
+## Install
+
+```
+npm install node-opengauss --save
+```
+
+## Development
 
 Development on MacOS/Linux is preferred :)
 
-1. Clone the repo
+1. Clone the repo `git clone git@github.com:lolimay/node-opengauss.git`
 2. Ensure you have a openGauss instance running, follow this [tutorial](https://www.lolimay.cn/2021/02/19/opengauss/%E4%BD%BF%E7%94%A8docker%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BAOpen%20Gauss%E7%8E%AF%E5%A2%83/) (Chinese Only/仅中文) to set up a local instance with docker
-3. Ensure you have the proper environment variables configured for connecting to the instance
 
-You need to soft-link `./lib` to `node_modules` to make sure the package `node-opengauss` work:
+Navigate to `examples` and run following to test driver:
 
 ```bash
-cd node_modules
-ln -s ../lib node-opengauss
+cd examples
+node index.mjs
 ```
 
 ### Run the project
@@ -25,11 +30,13 @@ node index.mjs
 
 ### For Debugging
 
+For more verbose logs by setting the environment variable `DEBUG` to true:
+
 ```bash
 DEBUG=true node index.mjs
 ```
 
-If you need to modify files inside `lib/protocol`, please run to take effects:
+If you need to modify files inside `lib/protocol`, please run following commands to take effects:
 
 ```bash
 cd lib/protocol
@@ -51,7 +58,7 @@ Check [here](https://www.lolimay.cn/categories/opengauss/) for more posts.
 
 - [OpenGauss配置客户端接入认证方式](https://opengauss.org/zh/docs/1.0.1/docs/Developerguide/%E9%85%8D%E7%BD%AE%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8E%A5%E5%85%A5%E8%AE%A4%E8%AF%81.html)
 - [OpenGauss的SHA256加密认证的协议细节和PostgresSQL不一致，具体实现请参考此GO语言实现。](https://github.com/opengauss-mirror/openGauss-connector-go-pq/blob/5febca52b422690e85543fcbd56b88d695b8fc30/conn.go#L1298)
-- [用于SHA256认证鉴权的GO语言实现](https://github.com/opengauss-mirror/openGauss-connector-go-pq/blob/5febca52b422690e85543fcbd56b88d695b8fc30/rfcdigest.go#L76)
+- [OpenGauss 的用于SHA256认证鉴权的GO语言实现 - 官方开源代码](https://github.com/opengauss-mirror/openGauss-connector-go-pq/blob/5febca52b422690e85543fcbd56b88d695b8fc30/rfcdigest.go#L76)
 
 ## License
 
