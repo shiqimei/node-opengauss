@@ -5,7 +5,8 @@
   "description": "A simple OpenGauss client for Node.js",
   "main": "lib/index.js",
   "files": [
-    "lib/**"
+    "lib/core/**",
+    "lib/protocol/dist/**"
   ],
   "repository": "git@github.com:lolimay/node-opengauss.git",
   "author": "Shiqi Mei<shiqi.mei@lolimay.cn>",
