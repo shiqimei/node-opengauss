@@ -6,7 +6,11 @@
   "main": "lib/index.js",
   "files": [
     "lib/core/**",
-    "lib/protocol/dist/**"
+    "lib/protocol/dist/**",
+    "lib/protocol/package.json",
+    "lib/protocol/LICENSE",
+    "lib/protocol/README.md",
+    "lib/protocol/tsconfig.json"
   ],
   "repository": "git@github.com:lolimay/node-opengauss.git",
   "author": "Shiqi Mei<shiqi.mei@lolimay.cn>",
